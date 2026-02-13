@@ -1,0 +1,189 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:black;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  color:orange;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:orange;
+}
+
+/* MENU BUTTON MOBILE */
+.menu-btn{
+  display:none;
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* BUTTONS */
+.btn{
+  padding:12px 25px;
+  background:orange;
+  border:none;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  color:black;
+  transform:scale(1.05);
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:url("https://picsum.photos/1600/900?tech") center/cover;
+}
+
+.hero h1{
+  font-size:50px;
+}
+
+/* ABOUT */
+.about{
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* SKILLS */
+.skills{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.skill-container{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.skill-card{
+  background:black;
+  padding:20px 30px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  background:orange;
+  transform:translateY(-8px);
+}
+
+/* PROJECTS */
+.projects{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.project-container{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.project-card{
+  background:black;
+  padding:25px;
+  width:260px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-10px);
+}
+
+/* CONTACT */
+.contact{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.contact-box{
+  max-width:500px;
+  margin:auto;
+}
+
+.contact input,
+.contact textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+  background:black;
+  text-align:center;
+  padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .nav-links{
+    display:none;
+    position:absolute;
+    right:0;
+    top:70px;
+    background:black;
+    flex-direction:column;
+    padding:20px;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .hero h1{
+    font-size:30px;
+  }
+}
